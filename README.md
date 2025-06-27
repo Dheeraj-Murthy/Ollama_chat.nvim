@@ -24,7 +24,7 @@ The Chat is inside a markdown file, which makes it easier to beautify the code s
 
 ```lua
 {
-  "yourusername/ollamarun.nvim",
+  "Dheeraj-Murthy/ollamarun.nvim",
   config = function()
     require("ollamarun").setup({
       model = "deepseek-coder-v2" -- optional, defaults to this
@@ -37,7 +37,7 @@ The Chat is inside a markdown file, which makes it easier to beautify the code s
 
 ```lua
 use {
-  "yourusername/ollamarun.nvim",
+  "Dheeraj-Murthy/ollamarun.nvim",
   config = function()
     require("ollamarun").setup()
   end
