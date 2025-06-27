@@ -89,6 +89,9 @@ _Coming soon: GIF showing chat in action._
 
 ## 💬 Contribution
 
+Author:
+M S Dheeraj Murthy
+
 PRs, ideas, and issues are all welcome!
 
 If you build something cool on top of this (e.g., prompt templates, command chaining, or Telescope plugins), please open an issue or PR and share!
