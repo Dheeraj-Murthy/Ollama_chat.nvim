@@ -87,13 +87,15 @@ _Coming soon: GIF showing chat in action._
 
 ---
 
-## 💬 Contribution
+## 👤 Author
 
-Author:
-M S Dheeraj Murthy
+**M. S. Dheeraj Murthy**  
+[GitHub](https://github.com/Dheeraj-Murthy) · [LinkedIn](https://www.linkedin.com/in/dheeraj-murthy-m-s-6b7784290)
+
+---
+
+## 💬 Contribution
 
 PRs, ideas, and issues are all welcome!
 
-If you build something cool on top of this (e.g., prompt templates, command chaining, or Telescope plugins), please open an issue or PR and share!
-
----
+## If you build something cool on top of this (e.g., prompt templates, command chaining, or Telescope plugins), please open an issue or PR and share!
