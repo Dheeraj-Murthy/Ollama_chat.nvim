@@ -1,4 +1,4 @@
-# ollamarun.nvim
+# Ollama_chat.nvim
 
 **Chat with local LLMs (like DeepSeek Coder) directly inside Neovim** using an
 interactive markdown buffer and the [Ollama](https://ollama.com) CLI.
@@ -27,10 +27,23 @@ with models like `deepseek-coder-v2`, `llama3`, `codellama`, etc.
 
 ```lua
 {
-  "Dheeraj-Murthy/ollamarun.nvim",
+  "Dheeraj-Murthy/Ollama_chat.nvim",
   config = function()
-    require("ollamarun").setup({
+    require("ollama_chat").setup({
       model = "deepseek-coder-v2", -- optional, defaults to this
+    })
+  end
+}
+```
+
+### For Local Development
+
+```lua
+{
+  dir = "~/Dev/nvim_plugin/ollama_chat.nvim",
+  config = function()
+    require("ollama_chat").setup({
+      model = "codellama:13b-instruct-q4_k_m", -- or any other Ollama model
     })
   end
 }
@@ -40,9 +53,9 @@ with models like `deepseek-coder-v2`, `llama3`, `codellama`, etc.
 
 ```lua
 use {
-  "Dheeraj-Murthy/ollamarun.nvim",
+  "Dheeraj-Murthy/Ollama_chat.nvim",
   config = function()
-    require("ollamarun").setup()
+    require("ollama_chat").setup()
   end
 }
 ```
@@ -51,7 +64,7 @@ use {
 
 ## Usage
 
-1. Run `:OllamarunChat` to open or jump to the chat buffer (`OllamaChat.md`).
+1. Run `:OllamaChat` to open or jump to the chat buffer (`OllamaChat.md`).
 2. Type your message under the `### User` block.
 3. Press `<Enter>` in normal mode to send it.
 4. The model’s response will stream back under a new `### Assistant` block.

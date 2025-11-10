@@ -78,7 +78,7 @@ local function insert_user_block(bufnr)
 end
 
 local function setup_keymap(bufnr, model)
-    if vim.b[bufnr].ollamarun_mapped then return end
+    if vim.b[bufnr].ollama_chat_mapped then return end
 
     vim.keymap.set("n", "<CR>", function()
         local messages = parse_chat(bufnr)
@@ -133,14 +133,14 @@ local function setup_keymap(bufnr, model)
         vim.fn.chanclose(job_id, "stdin")
     end, { buffer = bufnr, noremap = true, silent = true })
 
-    vim.b[bufnr].ollamarun_mapped = true
+    vim.b[bufnr].ollama_chat_mapped = true
 end
 
 function M.setup(opts)
     opts = opts or {}
     local model = opts.model or "deepseek-coder-v2"
 
-    vim.api.nvim_create_user_command("OllamarunChat", function()
+    vim.api.nvim_create_user_command("OllamaChat", function()
         chat_bufnr = get_chat_buf()
 
         if not chat_bufnr then
